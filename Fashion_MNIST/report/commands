@@ -1,0 +1,4 @@
+Commande pour afficher le compte-rendu de TensorBoard :
+  tensorboard --logdir=<emplacement du fichier de log>
+  
+  (Ensuite, copier l'adresse affichée par la console, ouvrir un navigateur Internet et coller cette adresse pour afficher le compte-rendu)
