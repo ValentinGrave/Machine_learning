@@ -4,21 +4,21 @@ VERSIONS:
 
 	FashionMNIST_V1.py:
 		• Modification des commentaires
-		• Changement de l’optimizer de la fonction ‘’compile()’’ de ‘’Adadelta()’’ en ‘’Adam()’’
+		• Changement de l'optimizer de la fonction "compile()" de "Adadelta()" en "Adam()"
 
 	FashionMNIST_V2.py:
-		• Ajout de l’argument ‘’shuffle’’ à la fonction ‘’fit()’’ (empêche la génération d’un pattern
+		• Ajout de l'argument "shuffle" à la fonction "fit()" (empêche la génération d’un pattern
 			récurrent lors de la récupération des données des trainings/tests, ce qui évite à 
-			l’entraînement réseau  d’être influencé par l’ordre des données)
-			NB : après la création d’un objet ‘’ImageDataGenerator()’’ la fonction ‘’fit_generator()’’ est
-			appliquée au modèle, au lieu de la fonction ‘’fit().
+			l'entraînement réseau  d'être influencé par l'ordre des données)
+			NB : après la création d'un objet "ImageDataGenerator()" la fonction "fit_generator()" est
+			appliquée au modèle, au lieu de la fonction "fit()".
 		• Changement des paramètres de certaines couches du modèle + ajout de couches au modèle
-		• Augmentation du nombre d’’epochs’’ et de la taille ‘’batch_size’’
-		• Ajout d’un callback ‘’ReduceLROnPlateau’’ (réduisant le learning rate du réseau, si la valeur
+		• Augmentation du nombre d' "epochs" et de la taille "batch_size"
+		• Ajout d'un callback "ReduceLROnPlateau" (réduisant le learning rate du réseau, si la valeur
 			monitorée stagne)
-		• Dans les callbacks, changement de la valeur du paramètre ‘’monitor’’ pour 'val_acc'
+		• Dans les callbacks, changement de la valeur du paramètre "monitor" pour 'val_acc'
 
 	FashionMNIST_V3.py:
-		• Dans les callbacks, changement de la valeur du paramètre ‘’monitor’’ pour ‘acc'
-		• Changements dans l’architecture globale du modèle
+		• Dans les callbacks, changement de la valeur du paramètre "monitor" pour 'acc'
+		• Changements dans l'architecture globale du modèle
 		• Ecriture de commentaires plus explicites au sein du programme
